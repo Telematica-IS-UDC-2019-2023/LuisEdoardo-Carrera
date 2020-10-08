@@ -25,6 +25,8 @@ let A = new Corredor('Azul');
 while (R.posicion < 100 && A.posicion < 100) {
     R.correr();
     A.correr();
+    console.log(`La posicion del corredor rojo es ${R.posicion}`)
+    console.log(`La posicion del corredor azul es ${A.posicion}`)
 }
 if (R.posicion >= 100 && A.posicion >= 100) {
     console.log('Ambos empataron');
